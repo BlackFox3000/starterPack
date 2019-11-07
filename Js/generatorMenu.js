@@ -5,8 +5,8 @@ function displayMenu() {
         '<ul> ' + '<li><a href="eval_layout_menu.html">Accueil</a></li>';
 
     if (arguments[0] instanceof Array) {
-        for (let i = 0; i < t.length; i++) {
-            menu += '<li><a href="Pages/' + t[i] + '.html">' + t[i] + '</a></li>';
+        for (let i = 0; i < arguments[0].length; i++) {
+            menu += '<li><a href="Pages/' + arguments[0][i] + '.html">' + arguments[0][i] + '</a></li>';
         }
     } else {
         for (let i = 0; i < arguments.length; i++) {
